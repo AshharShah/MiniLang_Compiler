@@ -4,6 +4,7 @@
 #include <string.h>
 
 #include "lexer_minilang.h"
+#include "parser_minilang.h"
 
 int main(int argc, char *argv[]){
   if(argc != 3){
@@ -18,8 +19,10 @@ int main(int argc, char *argv[]){
     printf("ERROR: File not found\n");
     exit(1);
   }
-  
+
   Token *tokens = lexer(file);
+
+  Node *AST_root = parser(tokens);
 
   printf("FINISHED\n");
 }

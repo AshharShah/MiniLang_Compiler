@@ -1,1 +1,6 @@
-if(x = 5){};
+int i = 0;
+
+while(i neq 101){
+  write(i, 2);
+  i = i + 1;
+}
