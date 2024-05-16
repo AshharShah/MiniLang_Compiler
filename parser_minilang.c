@@ -99,7 +99,7 @@ Token *generate_operation_nodes(Token *current_token, Node *current_node){
   while(current_token->type == INT || current_token->type == IDENTIFIER || current_token->type == OPERATOR){
     if(current_token->type == INT || current_token->type == IDENTIFIER){
       if((current_token->type != INT && current_token->type != IDENTIFIER) || current_token == NULL){
-        printf("Syntax Error hERE\n");
+        printf("Syntax Error Here\n");
         exit(1);
       }
       current_token++;
@@ -583,7 +583,7 @@ Token *generate_if_operation_nodes_right(Token *current_token, Node *current_nod
   while(current_token->type == INT || current_token->type == IDENTIFIER || current_token->type == OPERATOR){
     if(current_token->type == INT || current_token->type == IDENTIFIER){
       if((current_token->type != INT && current_token->type != IDENTIFIER) || current_token == NULL){
-        printf("Syntax Error hERE\n");
+        printf("Syntax Error Here\n");
         exit(1);
       }
       current_token++;

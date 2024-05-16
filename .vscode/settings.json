@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "codegenerator_minilang.h": "c",
+        "parser_minilang.h": "c"
+    }
+}

@@ -259,11 +259,11 @@ Token *lexer(FILE *file){
   tokens[tokens_index].value = '\0';
   tokens[tokens_index].type = END_OF_TOKENS;
 
-  printf("\n");
-  for(int i = 0; i < tokens_index; i++){
-    print_token(tokens[i]);
-    printf("\n");
-  }
+  // printf("\n");
+  // for(int i = 0; i < tokens_index; i++){
+  //   print_token(tokens[i]);
+  //   printf("\n");
+  // }
   
   return tokens;
 }
